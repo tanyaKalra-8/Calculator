@@ -1,9 +1,12 @@
 
 package com.mycompany.calculator;
+//import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
+//import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -55,6 +58,7 @@ public class Calculator implements ActionListener {
         functionButton[6] = delButton;
         functionButton[7] = clrButton;
         functionButton[8] = negButton;
+              
         
         for(int i=0;i<9;i++){
             functionButton[i].addActionListener(this);
@@ -67,6 +71,7 @@ public class Calculator implements ActionListener {
             numberButton[i].setFont(myFont);
             numberButton[i].setFocusable(false);
         }
+        
         negButton.setBounds(50,430,100,50);
         delButton.setBounds(150,430,100,50);
         clrButton.setBounds(250,430,100,50);
@@ -98,7 +103,13 @@ public class Calculator implements ActionListener {
         frame.add(delButton);
         frame.add(clrButton);
         frame.add(textfield);
+        ImageIcon img = new ImageIcon("C:\\Users\\Admin\\OneDrive\\Documents\\NetBeansProjects\\Calculator\\src\\main\\java\\Image\\calci.png");
+        frame.setIconImage(img.getImage());
         frame.setVisible(true);
+//        Toolkit tk=Toolkit.getDefaultToolkit(); 
+//        Dimension screenSize = tk.getScreenSize(); 
+//        frame.setSize(screenSize.width,screenSize.height); 
+//        frame.pack();
     }
     
     public static void main(String[] args) {
