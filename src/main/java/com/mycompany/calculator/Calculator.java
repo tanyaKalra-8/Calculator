@@ -105,6 +105,7 @@ public class Calculator implements ActionListener {
         frame.add(textfield);
         ImageIcon img = new ImageIcon("C:\\Users\\Admin\\OneDrive\\Documents\\NetBeansProjects\\Calculator\\src\\main\\java\\Image\\calci.png");
         frame.setIconImage(img.getImage());
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 //        Toolkit tk=Toolkit.getDefaultToolkit(); 
 //        Dimension screenSize = tk.getScreenSize(); 
