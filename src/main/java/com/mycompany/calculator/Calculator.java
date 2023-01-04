@@ -31,6 +31,7 @@ public class Calculator implements ActionListener {
     Calculator(){
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
         frame.setSize(420, 530);
         frame.setLayout(null);
         
@@ -103,17 +104,14 @@ public class Calculator implements ActionListener {
         frame.add(delButton);
         frame.add(clrButton);
         frame.add(textfield);
-        ImageIcon img = new ImageIcon("C:\\Users\\Admin\\OneDrive\\Documents\\NetBeansProjects\\Calculator\\src\\main\\java\\Image\\calci.png");
+        ImageIcon img = new ImageIcon("C:\\Users\\Admin\\OneDrive\\Documents\\NetBeansProjects\\Calculator\\src\\main\\java\\Resource\\calci.png");
         frame.setIconImage(img.getImage());
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
-//        Toolkit tk=Toolkit.getDefaultToolkit(); 
-//        Dimension screenSize = tk.getScreenSize(); 
-//        frame.setSize(screenSize.width,screenSize.height); 
-//        frame.pack();
     }
     
     public static void main(String[] args) {
+
         Calculator calsi = new Calculator();
     }
 
